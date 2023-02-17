@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/config/app_router.dart';
 import 'Screens/screens.dart';
+import 'package:food_delivery_app/Screens/screens.dart';
+import 'package:food_delivery_app/config/app_router.dart';
+
 void main() {
   runApp(const MyApp());
 }
