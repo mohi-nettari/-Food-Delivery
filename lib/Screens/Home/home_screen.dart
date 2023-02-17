@@ -15,13 +15,19 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Home'),),
-      body: ElevatedButton(
-    child: Text('Location Screen'),
-        onPressed: () {
-              Navigator.pushNamed(context, '/location');
-        },
+
+      body: Center(
+
+        child: ElevatedButton(
+        //    icon: Icon(Icons.map_rounded),  //icon data for elevated button
+          //  label: Text("Maps"),
+     child: Text('Maps'),
+          onPressed: () {
+                Navigator.pushNamed(context, '/location');
+          },
 
     ),
+      ),
     );
   }
 
