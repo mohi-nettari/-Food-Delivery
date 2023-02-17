@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:food_delivery_app/config/app_router.dart';
+import 'Screens/screens.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -13,23 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      home:  HomeScreen(
-
-
-      ),
-    );
-  }
-}
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-appBar: AppBar(title: Text("FoodEx"),),
+          onGenerateRoute: AppRouter.onGenerateRout,
+      initialRoute: HomeScreen.routeName,
     );
   }
 }
