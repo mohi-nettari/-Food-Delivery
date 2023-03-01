@@ -15,12 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'FoodDEx',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
           onGenerateRoute: AppRouter.onGenerateRout,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: LocationScreen.routeName,
     );
   }
 }
